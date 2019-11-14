@@ -37,9 +37,8 @@ endereco = 'Rua Vergueiro 1057'
 
 #tupla
 
-tupla = (1, 2, 3, 4) # imutavel
-tupla = 1, 2, 3, 4   # uma tupla
-tupla.count(1) #  conta intem dentro da tupla
-tupla.index(0) # retorna o item do index
-len(tupla)
-
+# tupla = (1, 2, 3, 4) # imutavel
+# tupla = 1, 2, 3, 4   # uma tupla
+# tupla.count(1) #  conta intem dentro da tupla
+# tupla.index(0) # retorna o item do index
+# len(tupla)

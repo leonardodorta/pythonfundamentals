@@ -75,7 +75,49 @@ linguagem = 'java'
 
 #tupla
 
+#dicionario
+
+dados = {
+    'cidades':{
+       'saopaulo':{
+           'nome': 'São Paulo',
+           'municipios': 645,
+           'populacao': 12.18
+       },
+       'riodejaneiro':{
+           'nome': 'Rio de Janeiro',
+           'municipios': 92,
+           'populacao': 6.32
+       },
+       'minasgerais':{
+           'nome': 'Minas Gerais',
+           'municipios': 31,
+           'populacao': 20.82
+       }
+    }
+
+}
 
 
+
+#  print a quantidade de municipios de minas
+# print(dados['cidades']['minasgerais']['municipios'])
+#  print a quantidade de municipios do rio
+# print(dados['cidades']['riodejaneiro']['municipios'])
+#  print a populacao de minas em milhoes
+# print(dados['cidades']['minasgerais']['populacao'] * 1000000)
+#  print a populacao de sao paulo em milhoes
+# print(dados['cidades']['saopaulo']['populacao'] * 1000000)
+#  print o nome de sao paulo
+# print(dados['cidades']['saopaulo']['nome'])
+
+
+# conversão de tipos
+
+# var = 15
+#dado a variavel var, peça que usuario digite um numero e mutiplique por var
+
+var = 15
+print(int(input('Digite um numero: ')) * var)
 
 
