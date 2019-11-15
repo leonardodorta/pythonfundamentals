@@ -77,26 +77,26 @@ linguagem = 'java'
 
 #dicionario
 
-dados = {
-    'cidades':{
-       'saopaulo':{
-           'nome': 'São Paulo',
-           'municipios': 645,
-           'populacao': 12.18
-       },
-       'riodejaneiro':{
-           'nome': 'Rio de Janeiro',
-           'municipios': 92,
-           'populacao': 6.32
-       },
-       'minasgerais':{
-           'nome': 'Minas Gerais',
-           'municipios': 31,
-           'populacao': 20.82
-       }
-    }
+# dados = {
+#     'cidades':{
+#        'saopaulo':{
+#            'nome': 'São Paulo',
+#            'municipios': 645,
+#            'populacao': 12.18
+#        },
+#        'riodejaneiro':{
+#            'nome': 'Rio de Janeiro',
+#            'municipios': 92,
+#            'populacao': 6.32
+#        },
+#        'minasgerais':{
+#            'nome': 'Minas Gerais',
+#            'municipios': 31,
+#            'populacao': 20.82
+#        }
+#     }
 
-}
+# }
 
 
 
@@ -117,7 +117,40 @@ dados = {
 # var = 15
 #dado a variavel var, peça que usuario digite um numero e mutiplique por var
 
-var = 15
-print(int(input('Digite um numero: ')) * var)
+# var = 15
+# print(int(input('Digite um numero: ')) * var)
 
 
+#faca um programa que calcula media do aluno
+# nome = input('Digite o nome do aluno: ')
+# nota1 = float(input('Digite nota1: '))
+# nota2 = float(input('Digite nota2: '))
+# media = (nota1 + nota1)/2
+
+# if media >= 7 and media < 10:
+#     print('aprovado')
+# elif media == 10:
+#     print(f'O aluno {nome} foi aprovado com distinção')
+# else:
+#     print(f'O aluno {nome} reprovado{media}')
+
+
+
+#faça uma lista com 10 nomes de usuarios
+#peça para usuario digitar o nome de usuario
+# caso não exista esse usuario na lista 
+# de NameERRO e volte para parte
+
+lista = ['leo', 'rafa', 'edu', 'joao', 'beto']
+while True:
+   try:
+        nome = input('Digite um nome: para acesso: ')
+        if nome.lower() not in lista:
+            print(f'nome invalido!!{nome}')
+            raise NameError(f' nome invalido {nome}')
+        else:
+            print(f' bem vindo {nome}')
+            break 
+    except NameError as n:
+        print(n)
+        continue
