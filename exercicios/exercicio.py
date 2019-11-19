@@ -141,16 +141,38 @@ linguagem = 'java'
 # caso não exista esse usuario na lista 
 # de NameERRO e volte para parte
 
-lista = ['leo', 'rafa', 'edu', 'joao', 'beto']
-while True:
-   try:
-        nome = input('Digite um nome: para acesso: ')
-        if nome.lower() not in lista:
-            print(f'nome invalido!!{nome}')
-            raise NameError(f' nome invalido {nome}')
-        else:
-            print(f' bem vindo {nome}')
-            break 
-    except NameError as n:
-        print(n)
-        continue
+# lista = ['leo', 'rafa', 'edu', 'joao', 'beto']
+# while True:
+#    try:
+#         nome = input('Digite um nome: para acesso: ')
+#         if nome.lower() not in lista:
+#             print(f'nome invalido!!{nome}')
+#             raise NameError(f' nome invalido {nome}')
+#         else:
+#             print(f' bem vindo {nome}')
+#             break 
+#     except NameError as n:
+#         print(n)
+#         continue
+
+#criar uma função que mudar o valor de nome e printa na tela
+
+
+# nome = ' joao'
+# def mudanome(novo_nome):
+#     nome = novo_nome
+#     return nome
+# print(mudanome('Ana'))
+
+    
+#criar uma funcao que pega o conteudo da variavel texto
+# e deixa em caixa alta
+texto = ' eusou um cerebo, Watson. O resto é mero apendice'
+
+def split_texto(text):
+    return text.split('')
+
+def uppertexto(text):
+    return text.upper()
+print(uppertexto(texto))
+    

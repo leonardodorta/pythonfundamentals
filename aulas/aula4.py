@@ -109,14 +109,52 @@
 
 # Raise Exception
 
-while True:
-    try:
-        login = input('Digite o login: ')
-        if login.lower() == 'bryan':
-            raise NameError('Bryan está banido!')
-        else:
-            print(f'Bem vindo {login}, acesso permitido')
-            break
-    except NameError as e:
-        print(e)
-        continue
+# while True:
+#     try:
+#         login = input('Digite o login: ')
+#         if login.lower() == 'bryan':
+#             raise NameError('Bryan está banido!')
+#         else:
+#             print(f'Bem vindo {login}, acesso permitido')
+#             break
+#     except NameError as e:
+#         print(e)
+#         continue
+
+# try:
+#     x =int(input('Digite o primeiro numero:'))
+#     y =int(input('Digite o segundo numero:'))
+# except Exception as e :
+#     print ('Digite apenas numero', e )
+
+# while True:
+#     try:
+#            x =int(input('Digite o primeiro numero:'))
+#            y =int(input('Digite o segundo numero:'))  
+#            print ( x +y)
+#            break
+#     except Exception as e:
+#         print('Digite apenas numeros!')
+#         continue
+
+# usuarios = ['Ana', 'Caio', 'Felipe']
+# try:
+#     user = input('Digite o nome de usuario:')
+#     if user == 'Ana':
+#         raise NameError('Usuario bloqueado!!')
+#     else: 
+#         print(f'Bem Vindo')
+# except NameError as n:
+#     print(n)
+
+
+# try:
+#     login = input('Digite seu login:')
+#     if login == 'caio':
+#         raise NameError ('Usuario banido')
+#     else:
+#         print(f'Bem Vindo !{login}!')
+# except NameError as n:
+#     print(n)
+# finally:
+#     print('finally!!')
