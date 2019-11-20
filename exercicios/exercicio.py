@@ -167,12 +167,35 @@ linguagem = 'java'
     
 #criar uma funcao que pega o conteudo da variavel texto
 # e deixa em caixa alta
-texto = ' eusou um cerebo, Watson. O resto é mero apendice'
+# texto = ' eusou um cerebo, Watson. O resto é mero apendice'
 
-def split_texto(text):
-    return text.split('')
+# def split_texto(text):
+#     return text.split('')
 
-def uppertexto(text):
-    return text.upper()
-print(uppertexto(texto))
+# def uppertexto(text):
+#     return text.upper()
+# print(uppertexto(texto))
     
+#***********************************************
+#exercicio aula6 
+#Crie uma função que peça 2 numero e retorne o maior 
+#se o valor for igual print "valores iguais"
+# guarde em variavel e print
+
+
+# def valormaior(x ,y):
+#     if x > y:
+#        print(x)
+#     elif y > x:
+#         print(y)
+#     elif y == x:
+#         print('valor iguais')
+#     return
+
+# valormaior(2,3)
+
+#crie uma funcao que receba um numero indefinido de valores numericos
+# com args 
+def ordenados(*valores):
+    return sorted(valores, reverse=True)
+
