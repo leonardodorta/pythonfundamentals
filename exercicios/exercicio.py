@@ -196,6 +196,96 @@ linguagem = 'java'
 
 #crie uma funcao que receba um numero indefinido de valores numericos
 # com args 
-def ordenados(*valores):
-    return sorted(valores, reverse=True)
+# def ordenados(*valores):
+#     return sorted(valores, reverse=True)
 
+#*******************************************************************
+
+#crie uma classe que represente um automovel
+#com os atributos:
+# ano de frabricação
+#marca
+#preco
+# e os metodos:
+# get_ano;
+# get_marca;
+# get_preco
+
+
+
+
+class Automovel():
+    '''Classe que presenta um automovel'''
+    def __init__(self, ano, marca, preco):
+        self.ano = ano
+        self.marca = marca
+        self.preco = preco
+    
+
+def get_ano(self):
+    print(self.ano)
+
+def get_marca(self):
+    print(self.marca)
+
+def get_preco(self):
+    print(self.preco)
+
+carro = Automovel (1999, 'Honda', 13999)
+
+
+#crie uma classe moto que terá:
+#o atributo tipo e herdará os atributos da calsse automovel
+
+# e os metodos:
+#ligar, desligar , acelearar, frear
+
+ligada = False
+
+class Moto(Automovel):
+    '''Classe que representa moto'''
+    def __init__(self, ano, marca, preco,tipo='Moto'):
+        super().__init__(ano, marca, preco)
+        self.tipo = tipo
+    
+    def ligar(self):
+        self.ligada = False
+        try:
+            if ligada == False:
+                print('ligando')
+                print ('ligada...')
+                ligada = True
+            else:
+                raise TypeError ('Liga a moto')
+        except TypeError as motodesligada:
+            print(motodesligada)
+
+    def desligar(self):
+        global ligada
+        try:
+            if ligada == True:
+                print('Desligando....')
+                print('Desligada')
+                ligada = False
+            else:
+                raise TypeError ('Moto desligada..')
+        except TypeError as m:
+            print(m)
+
+
+    def acelerar(self):
+        try:
+            if ligada == True:
+               raise TypeError ('Motodesligada')
+            
+        except TypeError as motodesligada:
+            print(motodesligada)
+
+    
+    def frear(self):
+        global ligada
+        try:
+            if ligada == True:
+                print('Freando..')
+        except TypeError as motodesligada:
+            print(motodesligada)
